@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Main Styling-->
+        <link rel="stylesheet" href="./src/style.css" />
+        <!-- jQuery -->
+        <script src="../libraries/jquery-3.6.1.min.js"></script>
+        <!-- Main Script -->
+        <script src="./src/script.js"></script>
+        
+
+        <title>Conway's Game of Life</title>
+    </head>
+    <body>
+        <div class="buttons">
+            <button id="increment">Increment One Cycle</button>
+            <button id="clear">Clear</button>
+        </div>
+        <div class="buttons">
+            <button id="autorun">Autorun</button>
+            <button id="autorun-stop">Stop Autorun</button>
+            <input id="speed" placeholder="Autorun speed (ms)" type="number"><button id="submitSpeed">Submit</button>
+        </div>
+        <div class="buttons">
+            Board Size: 
+            <button id="rect">Big Rectangle</button>
+            <button id="board-lg">Big</button>
+            <button id="board-md">Medium</button>
+            <button id="board-sm">Little</button>
+        </div>
+        <div class="buttons">
+            <button id="glider-gun">Make a Glider Gun</button>
+            (Only possible on big rectangle)
+        </div>
+        <div id="container">
+            <div id="squares">
+
+            </div>
+        </div>
+    </body>
+</html>
