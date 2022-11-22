@@ -15,30 +15,86 @@
         <title>Conway's Game of Life</title>
     </head>
     <body>
-        <div class="buttons">
-            <button id="increment">Increment One Cycle</button>
-            <button id="clear">Clear</button>
-        </div>
-        <div class="buttons">
-            <button id="autorun">Autorun</button>
-            <button id="autorun-stop">Stop Autorun</button>
-            <input id="speed" placeholder="Autorun speed (ms)" type="number"><button id="submitSpeed">Submit</button>
-        </div>
-        <div class="buttons">
-            Board Size: 
-            <button id="rect">Big Rectangle</button>
-            <button id="board-lg">Big</button>
-            <button id="board-md">Medium</button>
-            <button id="board-sm">Little</button>
-        </div>
-        <div class="buttons">
-            <button id="glider-gun">Make a Glider Gun</button>
-            (Only possible on big rectangle)
-        </div>
-        <div id="container">
-            <div id="squares">
+        <div id="content">
+            <h1 style="text-align: center;">Conway's Game of Life</h1>
 
+            <div id="container">
+                <div id="squares"></div>
             </div>
+
+            <div id="allButtons">
+                <div class="buttons">
+                    <h2>Basic Commands</h2>
+                </div>
+                <div class="buttons">
+                    <button id="increment">Increment One Cycle</button>
+                    <button id="clear">Clear</button>
+                </div>
+    
+                <hr>
+    
+                <div class="buttons">
+                    <h2>Autorun Commands</h2>
+                    
+                </div>
+                <div class="buttons">
+                    <p>Autorun increments the game at a set interval. You can change this interval using the autorun speed input box; this time is set in millisconds (1/1000th of a second).</p>
+                </div>
+                <div class="buttons">
+                    <button id="autorun">Autorun</button>
+                    <button id="autorun-stop">Stop Autorun</button>
+                </div>
+                <div class="buttons">
+                    <input id="speed" placeholder="Autorun speed (ms)" type="number" style="margin-right: 0;"><button style="margin-left: 4px;" id="submitSpeed">Submit</button>
+                </div>
+
+                <hr>
+
+
+                <div class="buttons">
+                    <h2>Board size</h2>
+                </div>
+                <div class="buttons">
+                    <p>This controls how big the board is. Certain patterns will only fit on certain sizes of board, so keep that in mind! That being said, the bigger the board, the longer each increment will take, so a smaller board is usually best whenever possible.</p>
+                </div>
+                <div class="buttons">
+                    <button id="rect">Big Rectangle</button>
+                    <button id="board-lg">Big</button>
+                    <button id="board-md">Medium</button>
+                    <button id="board-sm">Little</button>
+                </div>
+
+                <hr>
+
+                <div class="buttons">
+                    <h2>Patterns</h2>
+                </div>
+                <div class="buttons">
+                    <p>These buttons generate premade patterns onto the board for you. Be sure to use the right size board, otherwise they won't work!</p>
+                </div>
+                <div class="buttons">
+                    <button id="glider-gun">Make a Glider Gun</button>
+                    (big rectangle)
+                    <button id="hammerhead">Make a Hammerhead</button>
+                    (big rectangle)
+                    <button id="dart">Make a Dart</button>
+                    (big rectangle)
+                </div>
+                <div class="buttons">
+                    <button id="pulsar">Make a Pulsar</button>(medium)
+                    <button id="penta">Make a Pentadecathlon</button>(medium)
+                </div>
+                <div class="buttons">
+                    <button id="glider-sm">Make a Glider</button>(little)
+                    <button id="glider-md">Make a Glider</button>(medium)
+                    <button id="glider-lg">Make a Glider</button>(big)
+                </div>
+                <div class="buttons">
+                    <button id="fella">Make a fella with a big nose</button>(little)
+                </div>
+                
+            </div>            
+            
         </div>
     </body>
 </html>

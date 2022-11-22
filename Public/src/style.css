@@ -8,18 +8,21 @@
 * {
     margin: 0;
 }
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
 #container {
-    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 .buttons {
-    width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 15px;
+    justify-content: left;
+    margin: 15px;
 }
 .running {
     background-color: greenyellow;
